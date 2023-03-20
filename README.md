@@ -1,6 +1,8 @@
 # dots-unity-example
 A project in C# that explores Unity's new data-oriented technology stack (DOTS).
 
+See "Assets/Scripts" for code.
+
 # Why Make this Project?
 Multi-threading can be challenging, and exploring Unity's DOTS system (which is still in pre-release and therefore does not have the best documentation) is a great challenge that showcases my abilities as a developer. 
 
