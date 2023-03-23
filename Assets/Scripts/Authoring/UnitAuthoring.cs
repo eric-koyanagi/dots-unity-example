@@ -14,7 +14,8 @@ namespace Assets.Scripts.Authoring
                 AddComponent(new Unit
                 {
                     Speed = authoring.Speed,
-                    IsInFormation = true
+                    IsInFormation = true,
+                    IsFighting = false
                 });
             }
         }
@@ -25,5 +26,6 @@ namespace Assets.Scripts.Authoring
         public bool IsInFormation;
         public float Speed;
         public bool Offense;
+        public bool IsFighting;
     }
 }

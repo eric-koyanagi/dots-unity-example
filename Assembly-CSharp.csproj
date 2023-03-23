@@ -75,6 +75,7 @@
     <Compile Include="Assets\Scripts\Authoring\ArmyAuthoring.cs" />
     <Compile Include="Assets\Scripts\Aspects\ArmyAspect.cs" />
     <Compile Include="Assets\Scripts\Systems\ArmySystem.cs" />
+    <Compile Include="Assets\Scripts\Systems\UnitCollisionSystem.cs" />
     <Compile Include="Assets\Scripts\Authoring\UnitAuthoring.cs" />
     <Compile Include="Assets\Scripts\Systems\BattleSystem.cs" />
     <Compile Include="Assets\SlowlyScrollCameraZ.cs" />

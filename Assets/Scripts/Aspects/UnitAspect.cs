@@ -21,6 +21,12 @@ namespace Assets.Scripts.Aspects
             set => Unit.ValueRW.IsInFormation = value;
         }
 
+        public bool IsFighting
+        {
+            get => Unit.ValueRO.IsFighting;
+            set => Unit.ValueRW.IsFighting = value;
+        }
+
         public float3 Position
         {
             get => Transform.ValueRO.Position;
