@@ -12,3 +12,6 @@ With DOTS, it's possible to easily 100x the performance of a game -- because typ
 By implementing ISystem, this code spawns thousands of "army units" that move in formation until they are near an "enemy" army. Although it is possible to do this in a traditional monobehavior, the performance of thousands and thousands of moving units would not be robust enough. 
 
 Over time, I intend to continue to evolve this project and simulate many thousands of entities. The goal is to fully explore Unity's DOT stack and showcase its capabilities at scale with a large, fairly complex simulation. 
+
+# References
+- https://github.com/Unity-Technologies/EntityComponentSystemSamples
