@@ -19,6 +19,10 @@ public partial struct UnitCollisionSystem : ISystem
             var data = new Unit();
             lkup.TryGetComponent(collisionEvent.EntityA, out data);
             
+            if (!data.IsFighting)
+            {
+                data.IsFighting = true;
+            }
         }
     }
 

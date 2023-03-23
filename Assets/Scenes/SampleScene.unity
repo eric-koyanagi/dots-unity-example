@@ -267,12 +267,16 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 410d65ebf092f8e48a81e8a682429ae5, type: 3}
+  m_Script: {fileID: 11500000, guid: d291e763e18c5d842a9f2b3d76a050f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 0
+  moveSpeed: 10
+  zoomSpeed: 10
+  rotationSpeed: 10
+  minZoomDistance: 10
+  maxZoomDistance: 30
 --- !u!1 &410087039
 GameObject:
   m_ObjectHideFlags: 0
