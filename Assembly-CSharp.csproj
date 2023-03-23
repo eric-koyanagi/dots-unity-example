@@ -56,17 +56,18 @@
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
     <Analyzer Include="D:\Program Files\Unity\2022.2.9f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.SourceGenerators.dll" />
     <Analyzer Include="D:\Program Files\Unity\2022.2.9f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
-    <Analyzer Include="C:\Users\cirek\UnityProjects\Dots Example\Dots Army Test\Library\PackageCache\com.unity.entities@1.0.0-pre.44\Unity.Entities\SourceGenerators\Unity.Entities.SourceGen.EntityQuery.dll" />
-    <Analyzer Include="C:\Users\cirek\UnityProjects\Dots Example\Dots Army Test\Library\PackageCache\com.unity.entities@1.0.0-pre.44\Unity.Entities\SourceGenerators\Unity.Entities.SourceGen.SystemGenerator.dll" />
-    <Analyzer Include="C:\Users\cirek\UnityProjects\Dots Example\Dots Army Test\Library\PackageCache\com.unity.entities@1.0.0-pre.44\Unity.Entities\SourceGenerators\Unity.Entities.SourceGen.SystemAPIQueryBuilder.dll" />
-    <Analyzer Include="C:\Users\cirek\UnityProjects\Dots Example\Dots Army Test\Library\PackageCache\com.unity.entities@1.0.0-pre.44\Unity.Entities\SourceGenerators\Unity.Entities.SourceGen.LambdaJobs.dll" />
-    <Analyzer Include="C:\Users\cirek\UnityProjects\Dots Example\Dots Army Test\Library\PackageCache\com.unity.entities@1.0.0-pre.44\Unity.Entities\SourceGenerators\Unity.Entities.Analyzer.dll" />
-    <Analyzer Include="C:\Users\cirek\UnityProjects\Dots Example\Dots Army Test\Library\PackageCache\com.unity.entities@1.0.0-pre.44\Unity.Entities\SourceGenerators\Unity.Entities.SourceGen.SystemContextSystemModule.dll" />
-    <Analyzer Include="C:\Users\cirek\UnityProjects\Dots Example\Dots Army Test\Library\PackageCache\com.unity.entities@1.0.0-pre.44\Unity.Entities\SourceGenerators\Unity.Entities.SourceGen.JobEntity.dll" />
-    <Analyzer Include="C:\Users\cirek\UnityProjects\Dots Example\Dots Army Test\Library\PackageCache\com.unity.entities@1.0.0-pre.44\Unity.Entities\SourceGenerators\Unity.Entities.Analyzer.CodeFixes.dll" />
-    <Analyzer Include="C:\Users\cirek\UnityProjects\Dots Example\Dots Army Test\Library\PackageCache\com.unity.entities@1.0.0-pre.44\Unity.Entities\SourceGenerators\Unity.Entities.SourceGen.AspectGenerator.dll" />
-    <Analyzer Include="C:\Users\cirek\UnityProjects\Dots Example\Dots Army Test\Library\PackageCache\com.unity.entities@1.0.0-pre.44\Unity.Entities\SourceGenerators\Unity.Entities.SourceGen.Common.dll" />
-    <Analyzer Include="C:\Users\cirek\UnityProjects\Dots Example\Dots Army Test\Library\PackageCache\com.unity.entities@1.0.0-pre.44\Unity.Entities\SourceGenerators\Unity.Entities.SourceGen.IdiomaticCSharpForEach.dll" />
+    <Analyzer Include="C:\Users\cirek\UnityProjects\Dots Example\Dots Army Test\Library\PackageCache\com.unity.entities@1.0.0-pre.65\Unity.Entities\SourceGenerators\Unity.Entities.SourceGen.SystemGenerator.dll" />
+    <Analyzer Include="C:\Users\cirek\UnityProjects\Dots Example\Dots Army Test\Library\PackageCache\com.unity.entities@1.0.0-pre.65\Unity.Entities\SourceGenerators\Unity.Entities.SourceGen.SystemGenerator.SystemAPI.QueryBuilder.dll" />
+    <Analyzer Include="C:\Users\cirek\UnityProjects\Dots Example\Dots Army Test\Library\PackageCache\com.unity.entities@1.0.0-pre.65\Unity.Entities\SourceGenerators\Unity.Entities.SourceGen.SystemGenerator.SystemAPI.dll" />
+    <Analyzer Include="C:\Users\cirek\UnityProjects\Dots Example\Dots Army Test\Library\PackageCache\com.unity.entities@1.0.0-pre.65\Unity.Entities\SourceGenerators\Unity.Entities.Analyzer.dll" />
+    <Analyzer Include="C:\Users\cirek\UnityProjects\Dots Example\Dots Army Test\Library\PackageCache\com.unity.entities@1.0.0-pre.65\Unity.Entities\SourceGenerators\Unity.Entities.SourceGen.SystemGenerator.LambdaJobs.dll" />
+    <Analyzer Include="C:\Users\cirek\UnityProjects\Dots Example\Dots Army Test\Library\PackageCache\com.unity.entities@1.0.0-pre.65\Unity.Entities\SourceGenerators\Unity.Entities.SourceGen.SystemGenerator.Common.dll" />
+    <Analyzer Include="C:\Users\cirek\UnityProjects\Dots Example\Dots Army Test\Library\PackageCache\com.unity.entities@1.0.0-pre.65\Unity.Entities\SourceGenerators\Unity.Entities.SourceGen.SystemGenerator.SystemAPI.Query.dll" />
+    <Analyzer Include="C:\Users\cirek\UnityProjects\Dots Example\Dots Army Test\Library\PackageCache\com.unity.entities@1.0.0-pre.65\Unity.Entities\SourceGenerators\Unity.Entities.Analyzer.CodeFixes.dll" />
+    <Analyzer Include="C:\Users\cirek\UnityProjects\Dots Example\Dots Army Test\Library\PackageCache\com.unity.entities@1.0.0-pre.65\Unity.Entities\SourceGenerators\Unity.Entities.SourceGen.AspectGenerator.dll" />
+    <Analyzer Include="C:\Users\cirek\UnityProjects\Dots Example\Dots Army Test\Library\PackageCache\com.unity.entities@1.0.0-pre.65\Unity.Entities\SourceGenerators\Unity.Entities.SourceGen.Common.dll" />
+    <Analyzer Include="C:\Users\cirek\UnityProjects\Dots Example\Dots Army Test\Library\PackageCache\com.unity.entities@1.0.0-pre.65\Unity.Entities\SourceGenerators\Unity.Entities.SourceGen.SystemGenerator.EntityQueryBulkOperations.dll" />
+    <Analyzer Include="C:\Users\cirek\UnityProjects\Dots Example\Dots Army Test\Library\PackageCache\com.unity.entities@1.0.0-pre.65\Unity.Entities\SourceGenerators\Unity.Entities.SourceGen.JobEntityGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Aspects\UnitAspect.cs" />
@@ -329,7 +330,7 @@
       <HintPath>D:\Program Files\Unity\2022.2.9f1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Collections.LowLevel.ILSupport">
-      <HintPath>Library\PackageCache\com.unity.collections@2.1.0-pre.11\Unity.Collections.LowLevel.ILSupport\Unity.Collections.LowLevel.ILSupport.dll</HintPath>
+      <HintPath>Library\PackageCache\com.unity.collections@2.1.0-pre.18\Unity.Collections.LowLevel.ILSupport\Unity.Collections.LowLevel.ILSupport.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>Library\PackageCache\com.unity.ext.nunit@2.0.3\net40\unity-custom\nunit.framework.dll</HintPath>
@@ -712,6 +713,9 @@
     <Reference Include="Unity.Burst.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.Burst.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Physics.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Physics.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.ScriptableBuildPipeline">
       <HintPath>Library\ScriptAssemblies\Unity.ScriptableBuildPipeline.dll</HintPath>
     </Reference>
@@ -736,6 +740,9 @@
     <Reference Include="Unity.Mathematics.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.Mathematics.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Physics">
+      <HintPath>Library\ScriptAssemblies\Unity.Physics.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.Entities.UI.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.Entities.UI.Editor.dll</HintPath>
     </Reference>
@@ -751,11 +758,14 @@
     <Reference Include="Unity.Deformations">
       <HintPath>Library\ScriptAssemblies\Unity.Deformations.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Collections.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.Collections.Editor.dll</HintPath>
+    <Reference Include="Unity.Physics.Hybrid">
+      <HintPath>Library\ScriptAssemblies\Unity.Physics.Hybrid.dll</HintPath>
     </Reference>
     <Reference Include="PPv2URPConverters">
       <HintPath>Library\ScriptAssemblies\PPv2URPConverters.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Collections.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Collections.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
       <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
@@ -784,11 +794,11 @@
     <Reference Include="Unity.Burst">
       <HintPath>Library\ScriptAssemblies\Unity.Burst.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Timeline.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.VisualScripting.Shared.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Timeline.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ShaderGraph.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.ShaderGraph.Editor.dll</HintPath>

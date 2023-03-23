@@ -9,9 +9,11 @@ namespace Assets.Scripts.Aspects
     {
         public readonly Entity Self;
 
-        readonly TransformAspect Transform;
+        
+        //readonly TransformAspect Transform;
 
         readonly RefRW<Unit> Unit;
+        readonly RefRW<LocalTransform> Transform;
 
         public bool IsInFormation
         {
@@ -21,8 +23,8 @@ namespace Assets.Scripts.Aspects
 
         public float3 Position
         {
-            get => Transform.LocalPosition;
-            set => Transform.LocalPosition = value;
+            get => Transform.ValueRO.Position;
+            set => Transform.ValueRW.Position = value;
         }
 
         public float Speed

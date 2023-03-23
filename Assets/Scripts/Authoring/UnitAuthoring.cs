@@ -10,7 +10,7 @@ namespace Assets.Scripts.Authoring
         class UnitBaker : Baker<UnitAuthoring>
         {
             public override void Bake(UnitAuthoring authoring)
-            {
+            {                
                 AddComponent(new Unit
                 {
                     Speed = authoring.Speed,

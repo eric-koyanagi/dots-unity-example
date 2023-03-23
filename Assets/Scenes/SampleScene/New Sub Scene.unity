@@ -154,6 +154,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   UnitCount: 250
   ColumnLength: 25
+  ColumnScale: 1.6
   Offense: 0
   UnitPrefab: {fileID: 7936631838083791266, guid: 7b84caa6fe3f50e4b812a5ac4ab4c744,
     type: 3}
@@ -165,7 +166,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1572274443}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -30}
+  m_LocalPosition: {x: 0, y: 0, z: -55}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -203,6 +204,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   UnitCount: 1000
   ColumnLength: 50
+  ColumnScale: 1
   Offense: 1
   UnitPrefab: {fileID: 4672528001108253246, guid: ef0f6b52bcc939c468508c6d7e821b0f,
     type: 3}
@@ -214,7 +216,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1702411970}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -8.07}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
