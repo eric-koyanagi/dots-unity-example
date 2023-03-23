@@ -66,17 +66,6 @@ namespace Assets.Scripts.Systems
 
                 
             }
-            //var spawnLocalToWorld = WorldTransformLookup[turret.CannonBallSpawn];
-            //var cannonBallTransform = LocalTransform.FromPosition(spawnLocalToWorld.Position);
-
-            // We are about to overwrite the transform of the new instance. If we didn't explicitly
-            // copy the scale it would get reset to 1 and we'd have oversized cannon balls.
-            //cannonBallTransform.Scale = WorldTransformLookup[turret.CannonBallPrefab].Scale;
-            /*ECB.SetComponent(instance, cannonBallTransform);
-            ECB.SetComponent(instance, new CannonBall
-            {
-                Speed = spawnLocalToWorld.Forward() * 20.0f
-            });*/
         }
 
         float3 GetOffset(int i, int columnLength, float columnScale)

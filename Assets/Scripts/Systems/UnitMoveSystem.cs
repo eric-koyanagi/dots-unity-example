@@ -24,15 +24,23 @@ namespace Assets.Scripts.Systems
             if (!Unit.Offense) return;
             if (Unit.IsInFormation)
             {
-                Unit.Position += new float3(0f, 0f, Unit.Speed) * DeltaTime;
+                // --> Classic non-phsyics movement
+                //Unit.Position += new float3(0f, 0f, Unit.Speed) * DeltaTime;
 
+                // --> DOTS compatible phyiscs movement
+                Unit.Velocity = new float3(0f, 0f, Unit.Speed);
+
+                // TODO complete logic to "break formation" will move to a different system
                 if (Unit.Position.z < -10f)
                 {
                     Unit.IsInFormation = false;
                 }
             } else {
-                //Unit.Position += math.normalizesafe(Unit.Position - float3.zero) * Unit.Speed * 3f * DeltaTime;
-                Unit.Position += new float3(0f, 0f, Unit.Speed * 3f) * DeltaTime;
+                // --> Classic non-phsyics movement
+                //Unit.Position += new float3(0f, 0f, Unit.Speed * 3f) * DeltaTime;                 
+
+                // --> DOTS compatible phyiscs movement
+                Unit.Velocity = new float3(0f, 0f, Unit.Speed * 3f);
             }
         }
     }

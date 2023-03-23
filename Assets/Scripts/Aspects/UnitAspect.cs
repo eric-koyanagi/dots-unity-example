@@ -1,6 +1,7 @@
 ﻿using Assets.Scripts.Authoring;
 using Unity.Entities;
 using Unity.Mathematics;
+using Unity.Physics;
 using Unity.Transforms;
 
 namespace Assets.Scripts.Aspects
@@ -9,11 +10,10 @@ namespace Assets.Scripts.Aspects
     {
         public readonly Entity Self;
 
-        
-        //readonly TransformAspect Transform;
 
         readonly RefRW<Unit> Unit;
         readonly RefRW<LocalTransform> Transform;
+        readonly RefRW<PhysicsVelocity> PhysicsVelocity;
 
         public bool IsInFormation
         {
@@ -25,6 +25,12 @@ namespace Assets.Scripts.Aspects
         {
             get => Transform.ValueRO.Position;
             set => Transform.ValueRW.Position = value;
+        }
+
+        public float3 Velocity
+        {
+            get => PhysicsVelocity.ValueRO.Linear;
+            set => PhysicsVelocity.ValueRW.Linear = value;
         }
 
         public float Speed
