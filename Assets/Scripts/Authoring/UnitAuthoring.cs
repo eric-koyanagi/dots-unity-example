@@ -21,7 +21,7 @@ namespace Assets.Scripts.Authoring
         }
     }
 
-    struct Unit : IComponentData
+    public struct Unit : IComponentData
     {
         public bool IsInFormation;
         public float Speed;

@@ -40,7 +40,13 @@ namespace Assets.Scripts.Systems
                 //Unit.Position += new float3(0f, 0f, Unit.Speed * 3f) * DeltaTime;                 
 
                 // --> DOTS compatible phyiscs movement
-                Unit.Velocity = new float3(0f, 0f, Unit.Speed * 3f);
+                if (!Unit.IsFighting)
+                {
+                    Unit.Velocity = new float3(0f, 0f, Unit.Speed * 3f);
+                } else
+                {
+                    Unit.Velocity = float3.zero;
+                }
             }
         }
     }
