@@ -275,7 +275,7 @@ MonoBehaviour:
   moveSpeed: 10
   zoomSpeed: 10
   rotationSpeed: 10
-  minZoomDistance: 10
+  minZoomDistance: 5
   maxZoomDistance: 30
 --- !u!1 &410087039
 GameObject:

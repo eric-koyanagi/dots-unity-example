@@ -50,7 +50,7 @@ public partial struct UnitColllisionEvent : ICollisionEventsJob
     public EntityCommandBuffer ECB;
 
     public void Execute(CollisionEvent collisionEvent)
-    {        
+    {
         SetFighting(collisionEvent.EntityA, collisionEvent.EntityB);
         SetFighting(collisionEvent.EntityB, collisionEvent.EntityA);
     }

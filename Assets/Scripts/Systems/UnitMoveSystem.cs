@@ -26,9 +26,6 @@ namespace Assets.Scripts.Systems
                 // for now, keep one army stationary as POC of basic systems
                 if (!Unit.Offense) return; 
 
-                // --> Classic non-phsyics movement
-                //Unit.Position += new float3(0f, 0f, Unit.Speed) * DeltaTime;
-
                 // --> DOTS compatible phyiscs movement
                 Unit.Velocity = new float3(0f, 0f, Unit.Speed);
 
@@ -38,14 +35,12 @@ namespace Assets.Scripts.Systems
                     Unit.IsInFormation = false;
                 }
             } else {
-                // --> Classic non-phsyics movement
-                //Unit.Position += new float3(0f, 0f, Unit.Speed * 3f) * DeltaTime;                 
-
                 // --> DOTS compatible phyiscs movement
                 if (!Unit.IsFighting)
                 {
                     Unit.Velocity = new float3(0f, 0f, Unit.Speed * 3f);
-                } else
+                } 
+                else
                 {
                     var velocity = math.up() * 1f;
                     if (math.distancesq(Unit.TargetPosition, Unit.Position) > 3f) {

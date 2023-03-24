@@ -310,7 +310,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   UnitCount: 1000
   ColumnLength: 50
-  ColumnScale: 1.1
+  ColumnScale: 0.8
   Offense: 1
   UnitPrefab: {fileID: 4672528001108253246, guid: ef0f6b52bcc939c468508c6d7e821b0f,
     type: 3}
