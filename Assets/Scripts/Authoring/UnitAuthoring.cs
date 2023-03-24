@@ -1,5 +1,6 @@
 ﻿
 using Unity.Entities;
+using Unity.Transforms;
 
 namespace Assets.Scripts.Authoring
 {
@@ -27,5 +28,6 @@ namespace Assets.Scripts.Authoring
         public float Speed;
         public bool Offense;
         public bool IsFighting;
+        public LocalTransform AttackTarget;
     }
 }

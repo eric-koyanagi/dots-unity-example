@@ -50,5 +50,10 @@ namespace Assets.Scripts.Aspects
             get => Unit.ValueRO.Offense;
             set => Unit.ValueRW.Offense = value;
         }
+
+        public float3 TargetPosition
+        {
+            get => Unit.ValueRO.AttackTarget.Position;
+        }
     }
 }

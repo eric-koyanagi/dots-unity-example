@@ -20,10 +20,12 @@ namespace Assets.Scripts.Systems
         // So those indices are used as a sorting key when recording commands in the EntityCommandBuffer,
         // this way we ensure that the playback of commands is always deterministic.
         void Execute([ChunkIndexInQuery] int chunkIndex, ref UnitAspect Unit)
-        {
-            if (!Unit.Offense) return;
+        {            
             if (Unit.IsInFormation)
             {
+                // for now, keep one army stationary as POC of basic systems
+                if (!Unit.Offense) return; 
+
                 // --> Classic non-phsyics movement
                 //Unit.Position += new float3(0f, 0f, Unit.Speed) * DeltaTime;
 
@@ -45,7 +47,12 @@ namespace Assets.Scripts.Systems
                     Unit.Velocity = new float3(0f, 0f, Unit.Speed * 3f);
                 } else
                 {
-                    Unit.Velocity = float3.zero;
+                    var velocity = math.up() * 1f;
+                    if (math.distancesq(Unit.TargetPosition, Unit.Position) > 3f) {
+                        velocity = math.normalize(Unit.TargetPosition - Unit.Position) * Unit.Speed;
+                    }
+
+                    Unit.Velocity = velocity;
                 }
             }
         }
@@ -58,6 +65,7 @@ namespace Assets.Scripts.Systems
         {
             var ecbSingleton = SystemAPI.GetSingleton<EndSimulationEntityCommandBufferSystem.Singleton>();
             var ecb = ecbSingleton.CreateCommandBuffer(state.WorldUnmanaged);
+
             var unitJob = new UnitMoveJob
             {
                 // Note the function call required to get a parallel writer for an EntityCommandBuffer.
