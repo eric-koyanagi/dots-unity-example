@@ -51,6 +51,7 @@ public partial struct UnitColllisionEvent : ICollisionEventsJob
 
     public void Execute(CollisionEvent collisionEvent)
     {
+        
         SetFighting(collisionEvent.EntityA, collisionEvent.EntityB);
         SetFighting(collisionEvent.EntityB, collisionEvent.EntityA);
     }

@@ -35,7 +35,8 @@ namespace Assets.Scripts.Systems
 
             new ArmySpawnjob
             {
-                ECB = ecb
+                ECB = ecb,
+                Random = new Random((uint)UnityEngine.Random.Range(1, 10000))
             }.Schedule();
 
             state.Enabled = false;
@@ -46,25 +47,25 @@ namespace Assets.Scripts.Systems
     partial struct ArmySpawnjob : IJobEntity 
     {
         public EntityCommandBuffer ECB;
+        public Random Random;
+
         void Execute(in ArmyAspect army) 
         {
             for (var i = 0; i < army.UnitCount; i++)
             {
                 var instance = ECB.Instantiate(army.UnitToSpawn);
+                
                 //ECB.SetComponent(instance, WorldTransform.FromPosition(army.SpawnPos + GetOffset(i)));
                 ECB.SetComponent(instance, new Unit
                 {
-                    Speed = -0.25f,
+                    Speed = army.UnitSpeed,
                     IsInFormation = true,
-                    Offense = army.Offense
                 });
                 
                 
                 var unitTransform = LocalTransform.FromPosition(army.SpawnPos + GetOffset(i, army.ColumnLength, army.ColumnScale));
                 ECB.SetComponent(instance, unitTransform);
-                
-
-                
+               
             }
         }
 
@@ -74,9 +75,10 @@ namespace Assets.Scripts.Systems
             float col = math.floor(i / columnLength) * columnScale;
 
             float x = col;
-            float y = 0f;
+            float y = Random.NextFloat(-3f, 3f);
             float z = row;
             return new float3(x, y, z);
         }
+       
     }
 }

@@ -155,7 +155,7 @@ MonoBehaviour:
   m_SimulationType: 1
   m_Gravity:
     x: -0
-    y: -5
+    y: 0
     z: -0
   m_SolverIterationCount: 4
   m_EnableSolverStabilizationHeuristic: 0
@@ -258,7 +258,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 878ff60faa3cb554dbef9e837720594d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UnitCount: 250
+  UnitCount: 1000
+  UnitSpeed: 1
   ColumnLength: 25
   ColumnScale: 1.6
   Offense: 0
@@ -309,8 +310,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   UnitCount: 1000
+  UnitSpeed: 0.8
   ColumnLength: 50
-  ColumnScale: 0.8
+  ColumnScale: 0.7
   Offense: 1
   UnitPrefab: {fileID: 4672528001108253246, guid: ef0f6b52bcc939c468508c6d7e821b0f,
     type: 3}
@@ -349,7 +351,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1952717948
 MonoBehaviour:
   m_ObjectHideFlags: 0

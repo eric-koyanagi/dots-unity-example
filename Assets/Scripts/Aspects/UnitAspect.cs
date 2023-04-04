@@ -15,6 +15,11 @@ namespace Assets.Scripts.Aspects
         readonly RefRW<LocalTransform> Transform;
         readonly RefRW<PhysicsVelocity> PhysicsVelocity;
 
+        public Entity Army
+        {
+            get => Unit.ValueRO.Army;      
+        }
+        
         public bool IsInFormation
         {
             get => Unit.ValueRO.IsInFormation;

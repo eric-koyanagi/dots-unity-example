@@ -11,8 +11,10 @@ namespace Assets.Scripts.Authoring
         class UnitBaker : Baker<UnitAuthoring>
         {
             public override void Bake(UnitAuthoring authoring)
-            {                
-                AddComponent(new Unit
+            {
+                var entity = GetEntity(TransformUsageFlags.Dynamic);
+
+                AddComponent(entity, new Unit
                 {
                     Speed = authoring.Speed,
                     IsInFormation = true,
@@ -29,5 +31,7 @@ namespace Assets.Scripts.Authoring
         public bool Offense;
         public bool IsFighting;
         public LocalTransform AttackTarget;
+
+        public Entity Army;
     }
 }

@@ -7,6 +7,7 @@ using UnityEngine;
 public class ArmyAuthoring : UnityEngine.MonoBehaviour
 {
     public int UnitCount;
+    public float UnitSpeed = 1f;
     public int ColumnLength;
     public float ColumnScale = 1f;
     public bool Offense = true;
@@ -17,21 +18,24 @@ public class ArmyAuthoring : UnityEngine.MonoBehaviour
     {
         public override void Bake(ArmyAuthoring authoring)
         {
-            AddComponent(new Army
+            var entity = GetEntity(TransformUsageFlags.None);
+
+            AddComponent(entity, new Army
             {
                 UnitCount = authoring.UnitCount,
-                UnitPrefab = GetEntity(authoring.UnitPrefab),
+                UnitSpeed = authoring.UnitSpeed,
+                UnitPrefab = GetEntity(authoring.UnitPrefab, TransformUsageFlags.None),
                 ArmyTransform = authoring.transform.position,
                 ColumnLength = authoring.ColumnLength,
-                Offense = authoring.Offense,
-                ColumnScale = authoring.ColumnScale,
-            }) ;
+                ColumnScale = authoring.ColumnScale
+            });
         }
     }
 }
 struct Army : IComponentData
 {
     public int UnitCount;
+    public float UnitSpeed;
  
     public Entity UnitPrefab;
 
@@ -40,5 +44,4 @@ struct Army : IComponentData
     public int ColumnLength;
     public float ColumnScale;
 
-    public bool Offense; 
 }

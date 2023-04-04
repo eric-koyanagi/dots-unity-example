@@ -24,7 +24,7 @@ namespace Assets.Scripts.Systems
             if (Unit.IsInFormation)
             {
                 // for now, keep one army stationary as POC of basic systems
-                if (!Unit.Offense) return; 
+                if (Unit.Speed <= 0) return; 
 
                 // --> DOTS compatible phyiscs movement
                 Unit.Velocity = new float3(0f, 0f, Unit.Speed);
@@ -42,7 +42,7 @@ namespace Assets.Scripts.Systems
                 } 
                 else
                 {
-                    var velocity = math.up() * 1f;
+                    var velocity = math.forward() * 1f;
                     if (math.distancesq(Unit.TargetPosition, Unit.Position) > 3f) {
                         velocity = math.normalize(Unit.TargetPosition - Unit.Position) * Unit.Speed;
                     }
