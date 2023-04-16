@@ -1,0 +1,18 @@
+.custom-label {
+    font-size: 20px;
+    -unity-font-style: bold;
+    color: rgb(68, 138, 255);
+}
+
+#selectGroupBox {
+    border: 1px solid #000;
+    background-color: #666;
+}
+
+#selectGroupBox Button {
+    background-color: #ffffff;
+    border: 0px;
+    border-radius: 5px;
+    padding: 8px 20px;
+    min-height: 50px;
+}

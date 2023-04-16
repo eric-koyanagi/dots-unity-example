@@ -1,0 +1,13 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/MainMenu.uss?fileID=7433441132597879392&amp;guid=30527cf363f01b14283f71c2705a641a&amp;type=3#MainMenu" />
+    <ui:VisualElement name="titleText" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
+        <ui:VisualElement name="VisualElement" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); flex-shrink: 1; margin-left: 15px; margin-right: 15px; max-width: 75%; align-items: stretch; justify-content: center; align-self: center;">
+            <ui:Label tabindex="-1" text="Some Space Name" display-tooltip-when-elided="true" enable-rich-text="true" style="-unity-text-align: upper-center; justify-content: flex-start; align-items: stretch; align-self: auto; margin-top: 4px; padding-top: 4px; padding-bottom: 15px; -unity-font: resource(&apos;FlatSkin/Font/Roboto-Black&apos;); font-size: 24px; -unity-font-style: bold; color: rgb(228, 241, 230); -unity-text-outline-width: 1px;" />
+            <ui:Button text="Continue" display-tooltip-when-elided="true" name="continue" focusable="true" style="-unity-font: resource(&apos;FlatSkin/Font/Roboto-Bold&apos;);" />
+            <ui:Button text="New game" display-tooltip-when-elided="true" name="newGame" style="-unity-font: resource(&apos;FlatSkin/Font/Roboto-Bold&apos;);" />
+            <ui:Button text="Load Game" display-tooltip-when-elided="true" name="loadGame" style="-unity-font: resource(&apos;FlatSkin/Font/Roboto-Bold&apos;);" />
+            <ui:Button text="Settings" display-tooltip-when-elided="true" name="settings" style="-unity-font: resource(&apos;FlatSkin/Font/Roboto-Bold&apos;);" />
+            <ui:Button text="Exit" display-tooltip-when-elided="true" name="exit" style="-unity-font: resource(&apos;FlatSkin/Font/Roboto-Bold&apos;);" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

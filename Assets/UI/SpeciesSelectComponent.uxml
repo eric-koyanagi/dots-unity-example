@@ -1,0 +1,9 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:VisualElement name="SpeciesSelect" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
+        <ui:Label tabindex="-1" text="Species Name" display-tooltip-when-elided="true" name="name" />
+        <ui:ScrollView style="margin-bottom: 10px; height: 113px;">
+            <ui:Label tabindex="-1" text="This is an example description. For centuries, the Hive served its creators, who viewed it as little more than a massive cloud of nanites. Even as the swarm gained sentience, it served. This is an example description. For centuries, the Hive served its creators, who viewed it as little more than a massive cloud of nanites. Even as the swarm gained sentience, it served. " display-tooltip-when-elided="true" name="Label" style="font-size: 12px; height: 72px; white-space: normal;" />
+        </ui:ScrollView>
+        <ui:VisualElement name="VisualElement" style="flex-grow: 1; background-color: rgb(72, 22, 22); background-image: url(&apos;project://database/Packages/com.unity.collab-proxy/Editor/PlasticSCM/Assets/Images/d_genericbuhochristmas2.png?fileID=2800000&amp;guid=5955491dc8dcecb4a993d9a008cf65a7&amp;type=3#d_genericbuhochristmas2&apos;);" />
+    </ui:VisualElement>
+</ui:UXML>

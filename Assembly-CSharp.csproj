@@ -70,15 +70,38 @@
     <Analyzer Include="C:\Users\cirek\UnityProjects\Dots Example\Dots Army Test\Library\PackageCache\com.unity.entities@1.0.0-pre.65\Unity.Entities\SourceGenerators\Unity.Entities.SourceGen.JobEntityGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Aspects\UnitAspect.cs" />
-    <Compile Include="Assets\Scripts\Systems\UnitMoveSystem.cs" />
-    <Compile Include="Assets\Scripts\Authoring\ArmyAuthoring.cs" />
-    <Compile Include="Assets\Scripts\Aspects\ArmyAspect.cs" />
-    <Compile Include="Assets\Scripts\Systems\ArmySystem.cs" />
-    <Compile Include="Assets\Scripts\Systems\UnitCollisionSystem.cs" />
-    <Compile Include="Assets\Scripts\MonoBehaviors\ProtoTypeCamera.cs" />
-    <Compile Include="Assets\Scripts\Authoring\UnitAuthoring.cs" />
-    <Compile Include="Assets\Scripts\Systems\BattleSystem.cs" />
+    <Compile Include="Assets\ExampleScripts\Authoring\ArmyAuthoring.cs" />
+    <Compile Include="Assets\ExampleScripts\MonoBehaviors\ProtoTypeCamera.cs" />
+    <Compile Include="Assets\UI\NewGameMono.cs" />
+    <Compile Include="Assets\UI\NewGameMenu.cs" />
+    <Compile Include="Assets\Scripts\Constants\PrefabEnums.cs" />
+    <Compile Include="Assets\Scripts\MonoBehaviors\UIManager.cs" />
+    <Compile Include="Assets\ExampleScripts\Systems\ArmySystem.cs" />
+    <Compile Include="Assets\ExampleScripts\Systems\BattleSystem.cs" />
+    <Compile Include="Assets\Scripts\Authoring\PlayerAuthoring.cs" />
+    <Compile Include="Assets\Scripts\Authoring\PrefabsAuthoring.cs" />
+    <Compile Include="Assets\Scripts\Aspects\PrefabAspect.cs" />
+    <Compile Include="Assets\UI\MainMenu.cs" />
+    <Compile Include="Assets\ExampleScripts\Aspects\ArmyAspect.cs" />
+    <Compile Include="Assets\Scripts\MonoBehaviors\NewGameDefaults.cs" />
+    <Compile Include="Assets\ExampleScripts\Aspects\UnitAspect.cs" />
+    <Compile Include="Assets\Scripts\Systems\NewGameSystem.cs" />
+    <Compile Include="Assets\ExampleScripts\Systems\UnitCollisionSystem.cs" />
+    <Compile Include="Assets\Scripts\Components\GameSettings.cs" />
+    <Compile Include="Assets\Scripts\Authoring\StarAuthoring.cs" />
+    <Compile Include="Assets\ExampleScripts\Systems\UnitMoveSystem.cs" />
+    <Compile Include="Assets\UI\MainMenuMono.cs" />
+    <Compile Include="Assets\ExampleScripts\Authoring\UnitAuthoring.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\UI\NewGameMenu.uxml" />
+    <None Include="Assets\UI\MainMenu.uss" />
+    <None Include="Assets\UI\SpeciesSelectComponent.uxml" />
+    <None Include="Assets\UI\NewGameMenu.uss" />
+    <None Include="Assets\BOXOPHOBIC\Polyverse Skies\Core\Shaders\Simple.shader" />
+    <None Include="Assets\UI\MainMenu.uxml" />
+    <None Include="Assets\BOXOPHOBIC\Polyverse Skies\Generator\Shaders\Rendering Clouds.shader" />
+    <None Include="Assets\BOXOPHOBIC\Polyverse Skies\Core\Shaders\Standard.shader" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -723,6 +746,9 @@
     <Reference Include="Unity.Entities">
       <HintPath>Library\ScriptAssemblies\Unity.Entities.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.ProBuilder.AddOns.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.ProBuilder.AddOns.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.Rider.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
     </Reference>
@@ -771,6 +797,9 @@
     <Reference Include="Unity.TextMeshPro">
       <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.ProBuilder.AssetIdRemapUtility">
+      <HintPath>Library\ScriptAssemblies\Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.VSCode.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
     </Reference>
@@ -794,6 +823,9 @@
     </Reference>
     <Reference Include="Unity.Burst">
       <HintPath>Library\ScriptAssemblies\Unity.Burst.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProBuilder">
+      <HintPath>Library\ScriptAssemblies\Unity.ProBuilder.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Shared.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll</HintPath>
@@ -839,6 +871,9 @@
     </Reference>
     <Reference Include="Unity.Timeline">
       <HintPath>Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProBuilder.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.ProBuilder.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Transforms">
       <HintPath>Library\ScriptAssemblies\Unity.Transforms.dll</HintPath>
@@ -893,6 +928,26 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Boxophobic.Utils.Scripts.csproj">
+      <Project>{CE02C19D-0F3E-8A04-A079-AC70056B7CD4}</Project>
+      <Name>Boxophobic.Utils.Scripts</Name>
+    </ProjectReference>
+    <ProjectReference Include="Boxophobic.PolyverseSkies.Runtime.csproj">
+      <Project>{B3F57DCA-60D2-6A8C-4200-EEB05C49F075}</Project>
+      <Name>Boxophobic.PolyverseSkies.Runtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="Boxophobic.PolyverseSkies.Editor.csproj">
+      <Project>{CA1E8745-5CD3-AA17-C13B-59B1BF8D0D09}</Project>
+      <Name>Boxophobic.PolyverseSkies.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Boxophobic.Utils.Editor.csproj">
+      <Project>{C9310F71-899C-FDCA-9F0E-584C1AEA4971}</Project>
+      <Name>Boxophobic.Utils.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Boxophobic.PolyverseSkies.Scripts.csproj">
+      <Project>{F59D7855-CDA5-0850-AEC7-C10421B70DB0}</Project>
+      <Name>Boxophobic.PolyverseSkies.Scripts</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

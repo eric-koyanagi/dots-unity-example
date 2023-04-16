@@ -1,0 +1,18 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:Template name="SpeciesSelectComponent" src="project://database/Assets/UI/SpeciesSelectComponent.uxml?fileID=9197481963319205126&amp;guid=112d0f5e96a97384b9fd778730a594fe&amp;type=3#SpeciesSelectComponent" />
+    <Style src="project://database/Assets/UI/NewGameMenu.uss?fileID=7433441132597879392&amp;guid=b9f60bc9d6d4b664c80a2a879e85d2c8&amp;type=3#NewGameMenu" />
+    <ui:VisualElement name="NewGameContainer" style="flex-grow: 1; background-color: rgba(255, 255, 255, 0.59); align-items: flex-start; align-self: center; justify-content: center; max-width: none; flex-direction: row;">
+        <ui:VisualElement name="SpeciesSelectContainer" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); justify-content: flex-start;">
+            <ui:Label tabindex="-1" text="Species:" display-tooltip-when-elided="true" name="Label" style="height: 20px;" />
+            <ui:GroupBox name="selectGroupBox" style="flex-direction: row; justify-content: center; height: 69px; padding-top: 5px; padding-bottom: 5px; margin-left: 0; margin-right: 0; align-items: center; background-color: rgba(255, 255, 255, 0); flex-wrap: wrap;">
+                <ui:Button text="Default Species" display-tooltip-when-elided="true" name="defaultSpecies" style="flex-shrink: 1;" />
+                <ui:Button text="Collective Species" display-tooltip-when-elided="true" name="collectiveSpecies" />
+                <ui:Button text="Button" display-tooltip-when-elided="true" name="Button" />
+            </ui:GroupBox>
+        </ui:VisualElement>
+        <ui:VisualElement name="SpeciesDetailsContainer" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); max-width: 400px; padding-left: 30px; padding-right: 30px; padding-top: 30px; padding-bottom: 30px; margin-top: 0;">
+            <ui:Instance template="SpeciesSelectComponent" name="SpeciesSelectComponent" style="height: 357px; opacity: 1; display: flex;" />
+            <ui:Button text="Start" display-tooltip-when-elided="true" name="start" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
